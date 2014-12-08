@@ -29,7 +29,7 @@
 function pclviewer(points, args)
     
     % change the next line to suit your operating system
-    viewer = '/usr/local/bin/pcl_viewer.app/Contents/MacOS/pcl_viewer';
+    viewer = 'pcl_viewer_release';
 
      
     pointfile = [tempname '.pcd'];
