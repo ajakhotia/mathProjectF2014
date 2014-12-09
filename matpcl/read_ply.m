@@ -13,13 +13,13 @@ function [vertex,face] = read_ply(filename)
 
 [d,c] = plyread(filename);
 
-vi = d.face.vertex_indices;
-nf = length(vi);
-face = zeros(nf,3);
-for i=1:nf
-    face(i,:) = vi{i}+1;
-end
-
+% vi = d.face.vertex_indices;
+% nf = length(vi);
+% face = zeros(nf,3);
+% for i=1:nf
+%     face(i,:) = vi{i}+1;
+% end
+face = 0;
 vertex = [d.vertex.x, d.vertex.y, d.vertex.z];
 
 

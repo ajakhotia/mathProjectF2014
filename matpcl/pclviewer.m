@@ -26,7 +26,7 @@
 % - add color
 
 
-function pclviewer(points, args)
+function pclviewer(points,args)
     
     % change the next line to suit your operating system
     viewer = 'pcl_viewer_release';
@@ -37,14 +37,11 @@ function pclviewer(points, args)
     if nargin < 2
         args = '';
     end
-    
-    savepcd(pointfile, points);
-    
-    system(sprintf('head -20 %s', pointfile));
-    
+
+    savepcd(pointfile, points);    
     system(sprintf('%s %s %s &', ...
-        viewer, pointfile, args));
+        viewer, pointfile, [args,' -ax 0.01 -opaque 0.5']));
    
-    pause(1)
+    pause(10)
     delete(pointfile);
     
