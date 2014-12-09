@@ -1,18 +1,18 @@
 %% Add the bunny data set
-addpath(fullfile('..','data','bunny','pcd'));
-addpath(fullfile('..','data','bunny','pcd','templates'));
+addpath(fullfile(pwd,'..','data','bunny','pcd'));
+addpath(fullfile(pwd,'..','data','bunny','pcd','templates'));
 
 %% Add PCL2MAT functions
-addpath(fullfile('..','matpcl'));
+addpath(fullfile(pwd,'..','matpcl'));
 
 %% Add quaternions toolbox
-addpath(fullfile('..','quaternions'));
+addpath(fullfile(pwd,'..','quaternions'));
 
 %% Add icp toolbox
-addpath(fullfile('..','icp'));
+addpath(fullfile(pwd,'..','icp'));
 
 %% Add lib
-addpath(fullfile('..','lib'));
+addpath(fullfile(pwd,'..','lib'));
 
 %% Add scripts
-addpath(fullfile('..','scripts'));
+addpath(fullfile(pwd,'..','scripts'));

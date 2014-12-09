@@ -1,4 +1,4 @@
 %% Setup the environment
-run('.\scripts\setupEnvironment.m');
+run(fullfile(pwd,'.\scripts\setupEnvironment.m'));
 
 %% 
