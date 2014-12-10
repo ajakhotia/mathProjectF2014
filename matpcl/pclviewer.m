@@ -40,7 +40,7 @@ function pclviewer(points,args)
 
     savepcd(pointfile, points);    
     system(sprintf('%s %s %s &', ...
-        viewer, pointfile, [args,' -ax 0.01 -opaque 0.5']));
+        viewer, pointfile, [args,' -ax 0.1 -opaque 1 -ps 3']));
    
     pause(10)
     delete(pointfile);

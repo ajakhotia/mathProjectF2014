@@ -11,6 +11,9 @@ addpath(fullfile(pwd,'..','quaternions'));
 %% Add icp toolbox
 addpath(fullfile(pwd,'..','icp'));
 
+%% Add HPR toolbox
+addpath(fullfile(pwd,'..','HPR'));
+
 %% Add lib
 addpath(fullfile(pwd,'..','lib'));
 
